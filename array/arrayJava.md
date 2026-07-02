@@ -2261,21 +2261,21 @@ static void rotate(int[][] matrix) {
 
 Recognizing which **pattern** a problem fits is often more valuable than memorizing individual solutions. These are the recurring templates used throughout §14:
 
-| Pattern | Signal Phrases | Core Idea | Example (§) |
+| Pattern | Signal Phrases | Core Idea |  |
 |---|---|---|---|
-| **Two Pointers (opposite ends)** | "sorted array", "palindrome", "pair that sums to X" | Start at both ends, move inward based on a comparison | §14.2, §14.9, §14.10 |
-| **Two Pointers (same direction / fast-slow or read-write)** | "remove/move elements in place", "compact array" | One pointer scans, another marks the write boundary | §14.4 |
-| **Three-Way Partitioning** | "sort with only 3 distinct values", "partition around a pivot" | `low/mid/high` boundaries dividing the array into 3 zones | §14.5 |
-| **Sliding Window (fixed size)** | "subarray of size k" | Maintain a running aggregate; add entering / remove leaving element in O(1) | §14.11 |
-| **Sliding Window (variable size)** | "smallest/longest subarray with property X" | Expand right pointer; shrink left pointer while condition holds | (extension of §14.11) |
-| **Prefix / Suffix Aggregation** | "range sum query", "product except self", "value depends on both sides" | Precompute running aggregate(s) in one or two linear passes | §14.8, §14.10 (alt) |
-| **Kadane's Running-Best** | "maximum/minimum contiguous subarray" | Track best-ending-here vs best-overall while scanning | §14.6 |
-| **Greedy Single Pass with Running Extremum** | "buy low sell high", "max difference" | Track running min/max; compute candidate answer at each step | §14.1, §14.7 |
-| **Merge From the Back** | "merge into array with existing trailing capacity" | Fill destination from the highest index downward to avoid shifting | §14.12 |
-| **XOR / Bit Trick** | "find the missing/duplicate/unique number", O(1) space required | Exploit `x^x=0` and XOR's commutativity | §14.13 |
-| **Boundary Shrinking (2D)** | "spiral order", "print matrix in a specific order" | Track `top/bottom/left/right`; traverse and shrink each edge | §14.14 |
-| **Transpose + Reverse (2D)** | "rotate matrix in place" | Decompose a 2D geometric transform into simpler composable steps | §14.15 |
-| **Reversal Algorithm** | "rotate array in place, O(1) space" | Reverse whole, then reverse each logical segment | §14.3 |
+| **Two Pointers (opposite ends)** | "sorted array", "palindrome", "pair that sums to X" | Start at both ends, move inward based on a comparison |
+| **Two Pointers (same direction / fast-slow or read-write)** | "remove/move elements in place", "compact array" | One pointer scans, another marks the write boundary | |
+| **Three-Way Partitioning** | "sort with only 3 distinct values", "partition around a pivot" | `low/mid/high` boundaries dividing the array into 3 zones | |
+| **Sliding Window (fixed size)** | "subarray of size k" | Maintain a running aggregate; add entering / remove leaving element in O(1) |  |
+| **Sliding Window (variable size)** | "smallest/longest subarray with property X" | Expand right pointer; shrink left pointer while condition holds |  |
+| **Prefix / Suffix Aggregation** | "range sum query", "product except self", "value depends on both sides" | Precompute running aggregate(s) in one or two linear passes |  |
+| **Kadane's Running-Best** | "maximum/minimum contiguous subarray" | Track best-ending-here vs best-overall while scanning |  |
+| **Greedy Single Pass with Running Extremum** | "buy low sell high", "max difference" | Track running min/max; compute candidate answer at each step | |
+| **Merge From the Back** | "merge into array with existing trailing capacity" | Fill destination from the highest index downward to avoid shifting | |
+| **XOR / Bit Trick** | "find the missing/duplicate/unique number", O(1) space required | Exploit `x^x=0` and XOR's commutativity |  |
+| **Boundary Shrinking (2D)** | "spiral order", "print matrix in a specific order" | Track `top/bottom/left/right`; traverse and shrink each edge |  |
+| **Transpose + Reverse (2D)** | "rotate matrix in place" | Decompose a 2D geometric transform into simpler composable steps |  |
+| **Reversal Algorithm** | "rotate array in place, O(1) space" | Reverse whole, then reverse each logical segment |  |
 
 ---
 
