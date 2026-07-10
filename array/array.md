@@ -1,5 +1,5 @@
 # The Complete Array Handbook
-### From First Principles to FAANG Interviews — A Python-First Reference
+
 
 ---
 
